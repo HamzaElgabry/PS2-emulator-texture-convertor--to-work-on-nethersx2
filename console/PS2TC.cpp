@@ -39,14 +39,13 @@ void convertTextures(const fs::path& sourceDir, const fs::path& destDir, bool re
             bool shouldProcess = false;
 
             if (!reverseMode) {
-                // Forward Logic: Original -> NetherSX2
+                // Forward Logic: pcsx2 -> NetherSX2
                 if (((currentVal >> 12) & 0xFULL) <= 2) {
                     newVal = (currentVal + 0x4000ULL) & 0xFFFFFFFFULL;
                     shouldProcess = true;
                 }
             } else {
-                // Reverse Logic: NetherSX2 -> Original (Subtract 0x4000)
-                // We check if subtracting keeps it valid or matches the shifted range
+              // Reverse Logic: NetherSX2 -> pcsx2
                 if (currentVal >= 0x4000ULL) {
                     uint64_t testVal = (currentVal - 0x4000ULL) & 0xFFFFFFFFULL;
                     if (((testVal >> 12) & 0xFULL) <= 2) {
