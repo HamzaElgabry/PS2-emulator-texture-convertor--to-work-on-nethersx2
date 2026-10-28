@@ -1,4 +1,4 @@
-# ps2-texure-convertor--to-work-on-nethersx2
+# ps2-texture-convertor--to-work-on-nethersx2
 A modern Qt/C++ desktop application to convert PlayStation 2 textures for emulators since old formats don't work with nethersx2
 
 ## 📌 About the Project
