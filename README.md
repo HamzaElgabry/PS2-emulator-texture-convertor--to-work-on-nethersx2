@@ -36,7 +36,7 @@ I built this tool to seamlessly convert new-format texture packs into the legacy
 
 ---
 
-## 🙏 Credits & Acknowledgments
+## Credits & Acknowledgments
 
 The core mathematical logic and conversion routines are adapted from [NetherTTC](https://github.com/DIB1998/NetherTTC) by **DIB1998**. 
 
